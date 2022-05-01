@@ -6,11 +6,27 @@ import { AppComponent } from './components/app/app.component';
 
 import { environment } from 'src/environments/environment';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService } from './services/in-memory-data.service';
+import { InMemoryDataService } from './services/in-memory-data-service/in-memory-data.service';
+import { MenuComponent } from './components/menu-component/menu/menu.component';
+import { ContactListComponent } from './components/contact/ContactList-component/contact-list/contact-list.component';
+import { ContactItemComponent } from './components/contact/ContactItem-component/contact-item/contact-item.component';
+import { ContactIteComponent } from './components/contact/ContactItem-component/contact-ite/contact-ite.component';
+import { ContactDetailsComponent } from './components/contact/ContactDetails-component/contact-details/contact-details.component';
+import { MessageDetailsComponent } from './components/message/MessageDetails-component/message-details/message-details.component';
+import { MessageItemComponent } from './components/message/MessageItem-component/message-item/message-item.component';
+import { MessageListComponent } from './components/message/MessageList-component/message-list/message-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MenuComponent,
+    ContactListComponent,
+    ContactItemComponent,
+    ContactIteComponent,
+    ContactDetailsComponent,
+    MessageDetailsComponent,
+    MessageItemComponent,
+    MessageListComponent
   ],
   imports: [
     BrowserModule,
