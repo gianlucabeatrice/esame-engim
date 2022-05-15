@@ -1,1 +1,12 @@
-<p>contact-list works!</p>
+<div class="container"><a routerLink=''>
+    <i class="bi bi-arrow-left-circle"></i></a>
+<h1>Rubrica</h1>
+
+<li *ngFor="let contacts of contact">
+    <app-contact-item [item]="contacts" ></app-contact-item>
+<h3>{{contacts.firstname}}</h3>
+<h3>{{contacts.lastname}}</h3>
+<h3>{{contacts.email}}</h3>
+<h3>{{contacts.imageUrl}}</h3>
+</li>
+</div>

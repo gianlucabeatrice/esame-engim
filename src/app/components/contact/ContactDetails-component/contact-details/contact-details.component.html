@@ -1,1 +1,12 @@
-<p>contact-details works!</p>
+<div *ngIf="contact">
+  <h2>{{contact.firstname | uppercase}} Details</h2>
+  <div><span>id: </span>{{contact.id}}</div>
+  <div>
+    <label for="contact-firstname">contact firstname: </label>
+    <input id="contact-firstname" [(ngModel)]="contact.firstname" placeholder="firstname">
+  </div>
+</div>
+
+<button type="button" (click)="save()">save</button>
+
+<button type="button" (click)="goBack()">Go back</button>
